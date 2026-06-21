@@ -109,7 +109,6 @@ const PORTFOLIO_DATA = {
 
   // Verbatim Achievements List
   achievements: [
-    "Qualified national engineering index parameters via **GATE 2026** validation pathways.",
     "Acquired Research Paper Publication Certificate indexed inside Scopus Indexed Journal data layers (2026).",
     "Successfully executed full corporate MERN stack application and API management pipelines at Analyze Infotech.",
     "Completed algorithmic compilation and code execution sequences inside industrial Java AI programs at HCL Tech."
