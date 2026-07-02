@@ -23,7 +23,7 @@ const PORTFOLIO_DATA = {
                         <li style="margin-bottom:8px;">Used MongoDB for efficient storage of user profiles and resume data.</li>
                     </ul>`,
       tags: ["MERN Stack", "React.js", "AI Integration", "MongoDB"],
-      github: "https://github.com/amitmaurya7084/AiResumeInterviewAssi"
+      github: "https://ai-resume-interview-ass.vercel.app/"
     },
     {
       title: "Hotel Booking System (Training Project)",
@@ -218,7 +218,7 @@ function viewProjectDetails(index) {
   document.getElementById('modal-title').innerText = proj.title;
   document.getElementById('modal-meta').innerText = `Tech Stack Blueprint: ${proj.tags.join(', ')}`;
   document.getElementById('modal-desc').innerHTML = proj.longDesc;
-  document.getElementById('modal-extra').innerHTML = `<a href="${proj.github}" target="_blank" class="cta-btn" style="padding:10px 20px; font-size:13px; text-decoration:none;">Open Git Source Code &rarr;</a>`;
+  document.getElementById('modal-extra').innerHTML = `<a href="${proj.github}" target="_blank" class="cta-btn" style="padding:10px 20px; font-size:13px; text-decoration:none;">Live Project &rarr;</a>`;
   document.getElementById('details-modal').classList.add('active');
 }
 
