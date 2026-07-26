@@ -5,8 +5,10 @@
 const PORTFOLIO_DATA = {
   // Structured from technical skills segment
   skills: [
-    "JavaScript", "Java", "HTML5", "CSS3", "React.js",
-    "Node.js", "Express.js", "REST APIs", "MongoDB", "SQL", "Git", "GitHub", "VS Code"
+    "JavaScript", "Java", "HTML5", "CSS3", "React.js","Node.js",
+    "Express.js","Tailwind CSS", "REST APIs", "MongoDB", "SQL",
+    "JWT Authentication", "OpenAI API", "Firebase", "Git", "GitHub", 
+    "Postman","VS Code", "Render", "Vercel", "Cloudinary", "Eclipse"
   ],
 
   // Full analytics of Academic Projects
