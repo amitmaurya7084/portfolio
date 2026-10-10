@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-brand-bg text-brand-text font-body antialiased;
+  background-image:
+    radial-gradient(60% 50% at 100% 0%, #E6EFFA 0%, transparent 70%),   /* top-right: halka blue */
+    radial-gradient(45% 40% at 0% 100%, #FEF8D9 0%, transparent 70%),   /* bottom-left: halka yellow */
+    radial-gradient(35% 35% at 80% 55%, rgba(242, 221, 142, 0.45) 0%, transparent 70%); /* photo ke peeche yellow glow */
+  background-attachment: fixed;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20 md:py-24;
+  }
+
+  .section-heading {
+    @apply text-2xl sm:text-3xl md:text-4xl font-display font-bold text-center mb-8 sm:mb-10 md:mb-14 px-2;
+  }
+
+  .section-heading span {
+    @apply bg-gradient-to-r from-brand-primary to-brand-accent bg-clip-text text-transparent;
+  }
+
+  .glass-card {
+    @apply bg-brand-surface/70 border border-brand-border rounded-2xl p-5 sm:p-6 backdrop-blur-sm
+           transition-all duration-300 hover:-translate-y-1 hover:shadow-glow hover:border-brand-primary/40;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-brand-primary to-brand-primaryDark
+           px-5 sm:px-6 py-2.5 sm:py-3 text-sm font-semibold text-white shadow-glow transition-transform duration-200
+           hover:scale-105 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-brand-primary/50 px-5 sm:px-6 py-2.5 sm:py-3
+           text-sm font-semibold text-brand-primary transition-all duration-200
+           hover:bg-brand-primary/10 hover:scale-105 active:scale-95;
+  }
+
+  .skill-pill {
+    @apply px-4 py-2 rounded-full text-sm font-medium bg-brand-surface border border-brand-border
+           text-brand-text/90 hover:border-brand-primary hover:text-brand-primary hover:-translate-y-0.5
+           transition-all duration-200 cursor-default;
+  }
+
+  .tag-pill {
+    @apply text-xs font-medium px-2.5 py-1 rounded-full bg-brand-primary/10 text-brand-primary border border-brand-primary/20;
+  }
+
+  .input-field {
+    @apply w-full rounded-lg bg-brand-bg border border-brand-border px-4 py-3 text-sm text-brand-text
+           placeholder:text-brand-muted focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-colors;
+  }
+}
